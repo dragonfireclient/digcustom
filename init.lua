@@ -1,5 +1,3 @@
-minetest.register_list_command("digcustom", "Configue custom autodig nodes", "digcustom_nodes")
-
 minetest.register_globalstep(function()
 	if minetest.settings:get_bool("digcustom") then
 		local list = (minetest.settings:get("digcustom_nodes") or ""):split(",")
@@ -9,6 +7,8 @@ minetest.register_globalstep(function()
 			minetest.dig_node(pos)
 		end
 	end
-end) 
+end)
+
+minetest.register_list_command("digcustom", "Configue custom autodig nodes", "digcustom_nodes")
 
 minetest.register_cheat("DigCustom", "World", "digcustom")

@@ -1,1 +1,2 @@
 digcustom (DigCustom) bool false 
+digcustom_nodes (DigCustom Nodes) string
