@@ -5,5 +5,5 @@ digcustom (DigCustom) bool false
 digcustom_nodes (DigCustom Nodes) string
 
 # Maximum time to spend on digging a node.
-# -1 means no limit
+# Negative values mean no limit.
 digcustom_max_time (DigCustom Max Time) int -1
